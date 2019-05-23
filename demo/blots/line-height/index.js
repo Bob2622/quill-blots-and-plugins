@@ -7,6 +7,7 @@ class lineHeightBlot extends Inline {
 
   static create(value) {
     let node = super.create(value)
+    node.classList.add('line-height-' + value)
     node.dataset.lineHeight = value + ''
     return node
   }

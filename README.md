@@ -46,6 +46,10 @@ export default {
     Blots.addHandlderTo(this.quill)
   }
 }
+
+<style lang="less">
+@import './node_modules/quill-blots-and-plugins/demo/blots/index.less';
+</style>
 ```
 
 > 注意事项

@@ -1,4 +1,4 @@
-import Quill from '../../node_modules/quill'
+import Quill from 'quill'
 const Inline = Quill.import('blots/inline')
 
 class linePaddingBlot extends Inline {
