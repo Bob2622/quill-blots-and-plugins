@@ -1,0 +1,46 @@
+.letter-spacing-label-and-options (@letterSpacing) when (@letterSpacing >= 0) {
+  .letter-spacing-label-and-options(@letterSpacing - 1);
+  .ql-picker-label[data-value="@{letterSpacing}"]::before,
+  .ql-picker-item[data-value="@{letterSpacing}"]::before {
+    content: "@{letterSpacing}px" !important;
+  }
+}
+
+.letter-spacing (@letterSpacing) when (@letterSpacing >= 0) {
+  .letter-spacing(@letterSpacing - 1);
+  .letter-spacing-@{letterSpacing} {
+    letter-spacing: @letterSpacing * 1px !important;
+  }
+}
+
+.ql-letter-spacing {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+  .ql-picker-label {
+    outline: none;
+    &:hover::after {
+      display: block;
+      white-space: nowrap;
+      width: auto;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      padding: 2px 4px;
+      content: '字间距';
+      position: absolute;
+      top: -26px;
+      left: 0;
+      border: solid 1px #aaa;
+      border-radius: 4px;
+      color: #aaa;
+      background: white;
+    }
+  }
+  .letter-spacing-label-and-options(15)
+}
+
+.ql-editor {
+  .letter-spacing(15)
+}

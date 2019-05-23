@@ -1,0 +1,74 @@
+.image-edit-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+}
+.image-edit-dialog .image-edit-dialog-content {
+  white-space: normal;
+  position: absolute;
+  background: white;
+  border: solid 1px grey;
+  border-radius: 4px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  height: 230px;
+  top: 50%;
+  margin-top: -200px;
+  text-align: center;
+}
+.image-edit-dialog .image-edit-dialog-content h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.image-edit-dialog .image-edit-dialog-content input,
+.image-edit-dialog .image-edit-dialog-content button {
+  height: 32px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  outline: none;
+  vertical-align: middle;
+}
+.image-edit-dialog .image-edit-dialog-content > div {
+  margin-bottom: 8px;
+  display: inline-table;
+  width: 245px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.image-edit-dialog .image-edit-dialog-content > div label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 64px;
+  box-sizing: border-box;
+  padding-right: 8px;
+  color: #909399;
+}
+.image-edit-dialog .image-edit-dialog-content > div input,
+.image-edit-dialog .image-edit-dialog-content > div select {
+  line-height: 32px;
+  box-sizing: border-box;
+  display: table-cell;
+  width: 100%;
+  border: solid 1px #E4E7ED;
+}
+.image-edit-dialog .image-edit-dialog-content .tips {
+  color: red;
+  font-size: 12px;
+}
+.image-edit-dialog .image-edit-dialog-content button {
+  width: 200px;
+  display: block;
+  margin: 4px auto 16px auto;
+  background: #409EFF;
+  border: solid 1px #409EFF;
+  color: white;
+  cursor: pointer;
+}

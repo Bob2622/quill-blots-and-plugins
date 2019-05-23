@@ -1,0 +1,1126 @@
+.ql-font-size {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+}
+.ql-font-size .ql-picker-label {
+  outline: none;
+}
+.ql-font-size .ql-picker-label:hover::after {
+  white-space: nowrap;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 2px 4px;
+  content: '字体大小';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  color: #aaa;
+  background: white;
+}
+.ql-font-size .ql-picker-label[data-value="12"]::before,
+.ql-font-size .ql-picker-item[data-value="12"]::before {
+  content: "12px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="13"]::before,
+.ql-font-size .ql-picker-item[data-value="13"]::before {
+  content: "13px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="14"]::before,
+.ql-font-size .ql-picker-item[data-value="14"]::before {
+  content: "14px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="15"]::before,
+.ql-font-size .ql-picker-item[data-value="15"]::before {
+  content: "15px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="16"]::before,
+.ql-font-size .ql-picker-item[data-value="16"]::before {
+  content: "16px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="17"]::before,
+.ql-font-size .ql-picker-item[data-value="17"]::before {
+  content: "17px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="18"]::before,
+.ql-font-size .ql-picker-item[data-value="18"]::before {
+  content: "18px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="19"]::before,
+.ql-font-size .ql-picker-item[data-value="19"]::before {
+  content: "19px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="20"]::before,
+.ql-font-size .ql-picker-item[data-value="20"]::before {
+  content: "20px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="21"]::before,
+.ql-font-size .ql-picker-item[data-value="21"]::before {
+  content: "21px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="22"]::before,
+.ql-font-size .ql-picker-item[data-value="22"]::before {
+  content: "22px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="23"]::before,
+.ql-font-size .ql-picker-item[data-value="23"]::before {
+  content: "23px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="24"]::before,
+.ql-font-size .ql-picker-item[data-value="24"]::before {
+  content: "24px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="25"]::before,
+.ql-font-size .ql-picker-item[data-value="25"]::before {
+  content: "25px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="26"]::before,
+.ql-font-size .ql-picker-item[data-value="26"]::before {
+  content: "26px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="27"]::before,
+.ql-font-size .ql-picker-item[data-value="27"]::before {
+  content: "27px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="28"]::before,
+.ql-font-size .ql-picker-item[data-value="28"]::before {
+  content: "28px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="29"]::before,
+.ql-font-size .ql-picker-item[data-value="29"]::before {
+  content: "29px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="30"]::before,
+.ql-font-size .ql-picker-item[data-value="30"]::before {
+  content: "30px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="31"]::before,
+.ql-font-size .ql-picker-item[data-value="31"]::before {
+  content: "31px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="32"]::before,
+.ql-font-size .ql-picker-item[data-value="32"]::before {
+  content: "32px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="33"]::before,
+.ql-font-size .ql-picker-item[data-value="33"]::before {
+  content: "33px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="34"]::before,
+.ql-font-size .ql-picker-item[data-value="34"]::before {
+  content: "34px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="35"]::before,
+.ql-font-size .ql-picker-item[data-value="35"]::before {
+  content: "35px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="36"]::before,
+.ql-font-size .ql-picker-item[data-value="36"]::before {
+  content: "36px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="37"]::before,
+.ql-font-size .ql-picker-item[data-value="37"]::before {
+  content: "37px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="38"]::before,
+.ql-font-size .ql-picker-item[data-value="38"]::before {
+  content: "38px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="39"]::before,
+.ql-font-size .ql-picker-item[data-value="39"]::before {
+  content: "39px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="40"]::before,
+.ql-font-size .ql-picker-item[data-value="40"]::before {
+  content: "40px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="41"]::before,
+.ql-font-size .ql-picker-item[data-value="41"]::before {
+  content: "41px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="42"]::before,
+.ql-font-size .ql-picker-item[data-value="42"]::before {
+  content: "42px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="43"]::before,
+.ql-font-size .ql-picker-item[data-value="43"]::before {
+  content: "43px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="44"]::before,
+.ql-font-size .ql-picker-item[data-value="44"]::before {
+  content: "44px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="45"]::before,
+.ql-font-size .ql-picker-item[data-value="45"]::before {
+  content: "45px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="46"]::before,
+.ql-font-size .ql-picker-item[data-value="46"]::before {
+  content: "46px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="47"]::before,
+.ql-font-size .ql-picker-item[data-value="47"]::before {
+  content: "47px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="48"]::before,
+.ql-font-size .ql-picker-item[data-value="48"]::before {
+  content: "48px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="49"]::before,
+.ql-font-size .ql-picker-item[data-value="49"]::before {
+  content: "49px" !important;
+}
+.ql-font-size .ql-picker-label[data-value="50"]::before,
+.ql-font-size .ql-picker-item[data-value="50"]::before {
+  content: "50px" !important;
+}
+.ql-editor .font-size-12 {
+  font-size: 12px !important;
+}
+.ql-editor .font-size-13 {
+  font-size: 13px !important;
+}
+.ql-editor .font-size-14 {
+  font-size: 14px !important;
+}
+.ql-editor .font-size-15 {
+  font-size: 15px !important;
+}
+.ql-editor .font-size-16 {
+  font-size: 16px !important;
+}
+.ql-editor .font-size-17 {
+  font-size: 17px !important;
+}
+.ql-editor .font-size-18 {
+  font-size: 18px !important;
+}
+.ql-editor .font-size-19 {
+  font-size: 19px !important;
+}
+.ql-editor .font-size-20 {
+  font-size: 20px !important;
+}
+.ql-editor .font-size-21 {
+  font-size: 21px !important;
+}
+.ql-editor .font-size-22 {
+  font-size: 22px !important;
+}
+.ql-editor .font-size-23 {
+  font-size: 23px !important;
+}
+.ql-editor .font-size-24 {
+  font-size: 24px !important;
+}
+.ql-editor .font-size-25 {
+  font-size: 25px !important;
+}
+.ql-editor .font-size-26 {
+  font-size: 26px !important;
+}
+.ql-editor .font-size-27 {
+  font-size: 27px !important;
+}
+.ql-editor .font-size-28 {
+  font-size: 28px !important;
+}
+.ql-editor .font-size-29 {
+  font-size: 29px !important;
+}
+.ql-editor .font-size-30 {
+  font-size: 30px !important;
+}
+.ql-editor .font-size-31 {
+  font-size: 31px !important;
+}
+.ql-editor .font-size-32 {
+  font-size: 32px !important;
+}
+.ql-editor .font-size-33 {
+  font-size: 33px !important;
+}
+.ql-editor .font-size-34 {
+  font-size: 34px !important;
+}
+.ql-editor .font-size-35 {
+  font-size: 35px !important;
+}
+.ql-editor .font-size-36 {
+  font-size: 36px !important;
+}
+.ql-editor .font-size-37 {
+  font-size: 37px !important;
+}
+.ql-editor .font-size-38 {
+  font-size: 38px !important;
+}
+.ql-editor .font-size-39 {
+  font-size: 39px !important;
+}
+.ql-editor .font-size-40 {
+  font-size: 40px !important;
+}
+.ql-editor .font-size-41 {
+  font-size: 41px !important;
+}
+.ql-editor .font-size-42 {
+  font-size: 42px !important;
+}
+.ql-editor .font-size-43 {
+  font-size: 43px !important;
+}
+.ql-editor .font-size-44 {
+  font-size: 44px !important;
+}
+.ql-editor .font-size-45 {
+  font-size: 45px !important;
+}
+.ql-editor .font-size-46 {
+  font-size: 46px !important;
+}
+.ql-editor .font-size-47 {
+  font-size: 47px !important;
+}
+.ql-editor .font-size-48 {
+  font-size: 48px !important;
+}
+.ql-editor .font-size-49 {
+  font-size: 49px !important;
+}
+.ql-editor .font-size-50 {
+  font-size: 50px !important;
+}
+.image-edit-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+}
+.image-edit-dialog .image-edit-dialog-content {
+  white-space: normal;
+  position: absolute;
+  background: white;
+  border: solid 1px grey;
+  border-radius: 4px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  height: 230px;
+  top: 50%;
+  margin-top: -200px;
+  text-align: center;
+}
+.image-edit-dialog .image-edit-dialog-content h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.image-edit-dialog .image-edit-dialog-content input,
+.image-edit-dialog .image-edit-dialog-content button {
+  height: 32px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  outline: none;
+  vertical-align: middle;
+}
+.image-edit-dialog .image-edit-dialog-content > div {
+  margin-bottom: 8px;
+  display: inline-table;
+  width: 245px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.image-edit-dialog .image-edit-dialog-content > div label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 64px;
+  box-sizing: border-box;
+  padding-right: 8px;
+  color: #909399;
+}
+.image-edit-dialog .image-edit-dialog-content > div input,
+.image-edit-dialog .image-edit-dialog-content > div select {
+  line-height: 32px;
+  box-sizing: border-box;
+  display: table-cell;
+  width: 100%;
+  border: solid 1px #E4E7ED;
+}
+.image-edit-dialog .image-edit-dialog-content .tips {
+  color: red;
+  font-size: 12px;
+}
+.image-edit-dialog .image-edit-dialog-content button {
+  width: 200px;
+  display: block;
+  margin: 4px auto 16px auto;
+  background: #409EFF;
+  border: solid 1px #409EFF;
+  color: white;
+  cursor: pointer;
+}
+.ql-letter-spacing {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+}
+.ql-letter-spacing .ql-picker-label {
+  outline: none;
+}
+.ql-letter-spacing .ql-picker-label:hover::after {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 2px 4px;
+  content: '字间距';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  color: #aaa;
+  background: white;
+}
+.ql-letter-spacing .ql-picker-label[data-value="0"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="0"]::before {
+  content: "0px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="1"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="1"]::before {
+  content: "1px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="2"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="2"]::before {
+  content: "2px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="3"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="3"]::before {
+  content: "3px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="4"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="4"]::before {
+  content: "4px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="5"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="5"]::before {
+  content: "5px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="6"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="6"]::before {
+  content: "6px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="7"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="7"]::before {
+  content: "7px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="8"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="8"]::before {
+  content: "8px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="9"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="9"]::before {
+  content: "9px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="10"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="10"]::before {
+  content: "10px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="11"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="11"]::before {
+  content: "11px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="12"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="12"]::before {
+  content: "12px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="13"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="13"]::before {
+  content: "13px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="14"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="14"]::before {
+  content: "14px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="15"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="15"]::before {
+  content: "15px" !important;
+}
+.ql-editor .letter-spacing-0 {
+  letter-spacing: 0px !important;
+}
+.ql-editor .letter-spacing-1 {
+  letter-spacing: 1px !important;
+}
+.ql-editor .letter-spacing-2 {
+  letter-spacing: 2px !important;
+}
+.ql-editor .letter-spacing-3 {
+  letter-spacing: 3px !important;
+}
+.ql-editor .letter-spacing-4 {
+  letter-spacing: 4px !important;
+}
+.ql-editor .letter-spacing-5 {
+  letter-spacing: 5px !important;
+}
+.ql-editor .letter-spacing-6 {
+  letter-spacing: 6px !important;
+}
+.ql-editor .letter-spacing-7 {
+  letter-spacing: 7px !important;
+}
+.ql-editor .letter-spacing-8 {
+  letter-spacing: 8px !important;
+}
+.ql-editor .letter-spacing-9 {
+  letter-spacing: 9px !important;
+}
+.ql-editor .letter-spacing-10 {
+  letter-spacing: 10px !important;
+}
+.ql-editor .letter-spacing-11 {
+  letter-spacing: 11px !important;
+}
+.ql-editor .letter-spacing-12 {
+  letter-spacing: 12px !important;
+}
+.ql-editor .letter-spacing-13 {
+  letter-spacing: 13px !important;
+}
+.ql-editor .letter-spacing-14 {
+  letter-spacing: 14px !important;
+}
+.ql-editor .letter-spacing-15 {
+  letter-spacing: 15px !important;
+}
+.ql-line-height {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+}
+.ql-line-height .ql-picker-label {
+  outline: none;
+}
+.ql-line-height .ql-picker-label:hover::after {
+  white-space: nowrap;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 2px 4px;
+  content: '行间距大小';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  color: #aaa;
+  background: white;
+}
+.ql-line-height .ql-picker-label[data-value="1"]::before,
+.ql-line-height .ql-picker-item[data-value="1"]::before {
+  content: "1" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.1"]::before,
+.ql-line-height .ql-picker-item[data-value="1.1"]::before {
+  content: "1.1" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.2"]::before,
+.ql-line-height .ql-picker-item[data-value="1.2"]::before {
+  content: "1.2" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.3"]::before,
+.ql-line-height .ql-picker-item[data-value="1.3"]::before {
+  content: "1.3" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.4"]::before,
+.ql-line-height .ql-picker-item[data-value="1.4"]::before {
+  content: "1.4" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.5"]::before,
+.ql-line-height .ql-picker-item[data-value="1.5"]::before {
+  content: "1.5" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.6"]::before,
+.ql-line-height .ql-picker-item[data-value="1.6"]::before {
+  content: "1.6" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.7"]::before,
+.ql-line-height .ql-picker-item[data-value="1.7"]::before {
+  content: "1.7" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.8"]::before,
+.ql-line-height .ql-picker-item[data-value="1.8"]::before {
+  content: "1.8" !important;
+}
+.ql-line-height .ql-picker-label[data-value="1.9"]::before,
+.ql-line-height .ql-picker-item[data-value="1.9"]::before {
+  content: "1.9" !important;
+}
+.ql-line-height .ql-picker-label[data-value="2"]::before,
+.ql-line-height .ql-picker-item[data-value="2"]::before {
+  content: "2" !important;
+}
+.ql-line-height .ql-picker-label[data-value="2.1"]::before,
+.ql-line-height .ql-picker-item[data-value="2.1"]::before {
+  content: "2.1" !important;
+}
+.ql-editor .line-height-10 {
+  line-height: 1;
+}
+.ql-editor .line-height-11 {
+  line-height: 1.1;
+}
+.ql-editor .line-height-12 {
+  line-height: 1.2;
+}
+.ql-editor .line-height-13 {
+  line-height: 1.3;
+}
+.ql-editor .line-height-14 {
+  line-height: 1.4;
+}
+.ql-editor .line-height-15 {
+  line-height: 1.5;
+}
+.ql-editor .line-height-16 {
+  line-height: 1.6;
+}
+.ql-editor .line-height-17 {
+  line-height: 1.7;
+}
+.ql-editor .line-height-18 {
+  line-height: 1.8;
+}
+.ql-editor .line-height-19 {
+  line-height: 1.9;
+}
+.ql-editor .line-height-20 {
+  line-height: 2;
+}
+.ql-editor .line-height-21 {
+  line-height: 2.1;
+}
+.ql-line-padding {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+}
+.ql-line-padding .ql-picker-label {
+  outline: none;
+}
+.ql-line-padding .ql-picker-label:hover::after {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 2px 4px;
+  content: '行两边空白大小';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  color: #aaa;
+  background: white;
+}
+.ql-line-padding .ql-picker-label[data-value="3"]::before,
+.ql-line-padding .ql-picker-item[data-value="3"]::before {
+  content: "3px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="4"]::before,
+.ql-line-padding .ql-picker-item[data-value="4"]::before {
+  content: "4px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="5"]::before,
+.ql-line-padding .ql-picker-item[data-value="5"]::before {
+  content: "5px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="6"]::before,
+.ql-line-padding .ql-picker-item[data-value="6"]::before {
+  content: "6px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="7"]::before,
+.ql-line-padding .ql-picker-item[data-value="7"]::before {
+  content: "7px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="8"]::before,
+.ql-line-padding .ql-picker-item[data-value="8"]::before {
+  content: "8px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="9"]::before,
+.ql-line-padding .ql-picker-item[data-value="9"]::before {
+  content: "9px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="10"]::before,
+.ql-line-padding .ql-picker-item[data-value="10"]::before {
+  content: "10px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="11"]::before,
+.ql-line-padding .ql-picker-item[data-value="11"]::before {
+  content: "11px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="12"]::before,
+.ql-line-padding .ql-picker-item[data-value="12"]::before {
+  content: "12px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="13"]::before,
+.ql-line-padding .ql-picker-item[data-value="13"]::before {
+  content: "13px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="14"]::before,
+.ql-line-padding .ql-picker-item[data-value="14"]::before {
+  content: "14px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="15"]::before,
+.ql-line-padding .ql-picker-item[data-value="15"]::before {
+  content: "15px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="16"]::before,
+.ql-line-padding .ql-picker-item[data-value="16"]::before {
+  content: "16px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="17"]::before,
+.ql-line-padding .ql-picker-item[data-value="17"]::before {
+  content: "17px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="18"]::before,
+.ql-line-padding .ql-picker-item[data-value="18"]::before {
+  content: "18px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="19"]::before,
+.ql-line-padding .ql-picker-item[data-value="19"]::before {
+  content: "19px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="20"]::before,
+.ql-line-padding .ql-picker-item[data-value="20"]::before {
+  content: "20px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="21"]::before,
+.ql-line-padding .ql-picker-item[data-value="21"]::before {
+  content: "21px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="22"]::before,
+.ql-line-padding .ql-picker-item[data-value="22"]::before {
+  content: "22px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="23"]::before,
+.ql-line-padding .ql-picker-item[data-value="23"]::before {
+  content: "23px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="24"]::before,
+.ql-line-padding .ql-picker-item[data-value="24"]::before {
+  content: "24px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="25"]::before,
+.ql-line-padding .ql-picker-item[data-value="25"]::before {
+  content: "25px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="26"]::before,
+.ql-line-padding .ql-picker-item[data-value="26"]::before {
+  content: "26px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="27"]::before,
+.ql-line-padding .ql-picker-item[data-value="27"]::before {
+  content: "27px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="28"]::before,
+.ql-line-padding .ql-picker-item[data-value="28"]::before {
+  content: "28px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="29"]::before,
+.ql-line-padding .ql-picker-item[data-value="29"]::before {
+  content: "29px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="30"]::before,
+.ql-line-padding .ql-picker-item[data-value="30"]::before {
+  content: "30px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="31"]::before,
+.ql-line-padding .ql-picker-item[data-value="31"]::before {
+  content: "31px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="32"]::before,
+.ql-line-padding .ql-picker-item[data-value="32"]::before {
+  content: "32px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="33"]::before,
+.ql-line-padding .ql-picker-item[data-value="33"]::before {
+  content: "33px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="34"]::before,
+.ql-line-padding .ql-picker-item[data-value="34"]::before {
+  content: "34px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="35"]::before,
+.ql-line-padding .ql-picker-item[data-value="35"]::before {
+  content: "35px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="36"]::before,
+.ql-line-padding .ql-picker-item[data-value="36"]::before {
+  content: "36px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="37"]::before,
+.ql-line-padding .ql-picker-item[data-value="37"]::before {
+  content: "37px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="38"]::before,
+.ql-line-padding .ql-picker-item[data-value="38"]::before {
+  content: "38px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="39"]::before,
+.ql-line-padding .ql-picker-item[data-value="39"]::before {
+  content: "39px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="40"]::before,
+.ql-line-padding .ql-picker-item[data-value="40"]::before {
+  content: "40px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="41"]::before,
+.ql-line-padding .ql-picker-item[data-value="41"]::before {
+  content: "41px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="42"]::before,
+.ql-line-padding .ql-picker-item[data-value="42"]::before {
+  content: "42px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="43"]::before,
+.ql-line-padding .ql-picker-item[data-value="43"]::before {
+  content: "43px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="44"]::before,
+.ql-line-padding .ql-picker-item[data-value="44"]::before {
+  content: "44px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="45"]::before,
+.ql-line-padding .ql-picker-item[data-value="45"]::before {
+  content: "45px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="46"]::before,
+.ql-line-padding .ql-picker-item[data-value="46"]::before {
+  content: "46px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="47"]::before,
+.ql-line-padding .ql-picker-item[data-value="47"]::before {
+  content: "47px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="48"]::before,
+.ql-line-padding .ql-picker-item[data-value="48"]::before {
+  content: "48px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="49"]::before,
+.ql-line-padding .ql-picker-item[data-value="49"]::before {
+  content: "49px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="50"]::before,
+.ql-line-padding .ql-picker-item[data-value="50"]::before {
+  content: "50px" !important;
+}
+.ql-editor .line-padding-3 {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+.ql-editor .line-padding-4 {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+.ql-editor .line-padding-5 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+.ql-editor .line-padding-6 {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+.ql-editor .line-padding-7 {
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+}
+.ql-editor .line-padding-8 {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+.ql-editor .line-padding-9 {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+}
+.ql-editor .line-padding-10 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.ql-editor .line-padding-11 {
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+}
+.ql-editor .line-padding-12 {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+.ql-editor .line-padding-13 {
+  padding-left: 13px !important;
+  padding-right: 13px !important;
+}
+.ql-editor .line-padding-14 {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+.ql-editor .line-padding-15 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+.ql-editor .line-padding-16 {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.ql-editor .line-padding-17 {
+  padding-left: 17px !important;
+  padding-right: 17px !important;
+}
+.ql-editor .line-padding-18 {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+.ql-editor .line-padding-19 {
+  padding-left: 19px !important;
+  padding-right: 19px !important;
+}
+.ql-editor .line-padding-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.ql-editor .line-padding-21 {
+  padding-left: 21px !important;
+  padding-right: 21px !important;
+}
+.ql-editor .line-padding-22 {
+  padding-left: 22px !important;
+  padding-right: 22px !important;
+}
+.ql-editor .line-padding-23 {
+  padding-left: 23px !important;
+  padding-right: 23px !important;
+}
+.ql-editor .line-padding-24 {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+.ql-editor .line-padding-25 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+.ql-editor .line-padding-26 {
+  padding-left: 26px !important;
+  padding-right: 26px !important;
+}
+.ql-editor .line-padding-27 {
+  padding-left: 27px !important;
+  padding-right: 27px !important;
+}
+.ql-editor .line-padding-28 {
+  padding-left: 28px !important;
+  padding-right: 28px !important;
+}
+.ql-editor .line-padding-29 {
+  padding-left: 29px !important;
+  padding-right: 29px !important;
+}
+.ql-editor .line-padding-30 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.ql-editor .line-padding-31 {
+  padding-left: 31px !important;
+  padding-right: 31px !important;
+}
+.ql-editor .line-padding-32 {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+.ql-editor .line-padding-33 {
+  padding-left: 33px !important;
+  padding-right: 33px !important;
+}
+.ql-editor .line-padding-34 {
+  padding-left: 34px !important;
+  padding-right: 34px !important;
+}
+.ql-editor .line-padding-35 {
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+.ql-editor .line-padding-36 {
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
+.ql-editor .line-padding-37 {
+  padding-left: 37px !important;
+  padding-right: 37px !important;
+}
+.ql-editor .line-padding-38 {
+  padding-left: 38px !important;
+  padding-right: 38px !important;
+}
+.ql-editor .line-padding-39 {
+  padding-left: 39px !important;
+  padding-right: 39px !important;
+}
+.ql-editor .line-padding-40 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.ql-editor .line-padding-41 {
+  padding-left: 41px !important;
+  padding-right: 41px !important;
+}
+.ql-editor .line-padding-42 {
+  padding-left: 42px !important;
+  padding-right: 42px !important;
+}
+.ql-editor .line-padding-43 {
+  padding-left: 43px !important;
+  padding-right: 43px !important;
+}
+.ql-editor .line-padding-44 {
+  padding-left: 44px !important;
+  padding-right: 44px !important;
+}
+.ql-editor .line-padding-45 {
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+}
+.ql-editor .line-padding-46 {
+  padding-left: 46px !important;
+  padding-right: 46px !important;
+}
+.ql-editor .line-padding-47 {
+  padding-left: 47px !important;
+  padding-right: 47px !important;
+}
+.ql-editor .line-padding-48 {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+}
+.ql-editor .line-padding-49 {
+  padding-left: 49px !important;
+  padding-right: 49px !important;
+}
+.ql-editor .line-padding-50 {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+.swiper-edit-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 199;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content {
+  white-space: normal;
+  position: absolute;
+  background: white;
+  border: solid 1px grey;
+  border-radius: 4px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  height: 275px;
+  top: 50%;
+  margin-top: -137px;
+  text-align: center;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content h3 {
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content input,
+.swiper-edit-dialog .swiper-edit-dialog-content select,
+.swiper-edit-dialog .swiper-edit-dialog-content button {
+  height: 32px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  outline: none;
+  vertical-align: middle;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content > div {
+  margin-bottom: 8px;
+  display: inline-table;
+  width: 240px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content > div label {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  width: 64px;
+  box-sizing: border-box;
+  padding-right: 8px;
+  color: #909399;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content > div input,
+.swiper-edit-dialog .swiper-edit-dialog-content > div select {
+  line-height: 32px;
+  box-sizing: border-box;
+  display: table-cell;
+  width: 100%;
+  border: solid 1px #E4E7ED;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content button {
+  width: 200px;
+  display: block;
+  margin: 4px auto 16px auto;
+  background: #409EFF;
+  border: solid 1px #409EFF;
+  color: white;
+  cursor: pointer;
+}
+.swiper-edit-dialog .swiper-edit-dialog-content .tips {
+  color: red;
+  font-size: 12px;
+}
+.ql-swiper {
+  background: url('data:image/png;base64,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') !important;
+  background-size: cover !important;
+  padding: 0 !important;
+  width: 22px !important;
+  height: 18px !important;
+  margin: 3px 5px !important;
+}
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+  height: fit-content;
+}
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-container {
+  display: inline-block !important;
+}

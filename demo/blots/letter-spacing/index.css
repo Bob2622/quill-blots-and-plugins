@@ -1,0 +1,138 @@
+.ql-letter-spacing {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+}
+.ql-letter-spacing .ql-picker-label {
+  outline: none;
+}
+.ql-letter-spacing .ql-picker-label:hover::after {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding: 2px 4px;
+  content: '字间距';
+  position: absolute;
+  top: -26px;
+  left: 0;
+  border: solid 1px #aaa;
+  border-radius: 4px;
+  color: #aaa;
+  background: white;
+}
+.ql-letter-spacing .ql-picker-label[data-value="0"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="0"]::before {
+  content: "0px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="1"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="1"]::before {
+  content: "1px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="2"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="2"]::before {
+  content: "2px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="3"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="3"]::before {
+  content: "3px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="4"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="4"]::before {
+  content: "4px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="5"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="5"]::before {
+  content: "5px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="6"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="6"]::before {
+  content: "6px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="7"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="7"]::before {
+  content: "7px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="8"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="8"]::before {
+  content: "8px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="9"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="9"]::before {
+  content: "9px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="10"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="10"]::before {
+  content: "10px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="11"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="11"]::before {
+  content: "11px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="12"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="12"]::before {
+  content: "12px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="13"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="13"]::before {
+  content: "13px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="14"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="14"]::before {
+  content: "14px" !important;
+}
+.ql-letter-spacing .ql-picker-label[data-value="15"]::before,
+.ql-letter-spacing .ql-picker-item[data-value="15"]::before {
+  content: "15px" !important;
+}
+.ql-editor .letter-spacing-0 {
+  letter-spacing: 0px !important;
+}
+.ql-editor .letter-spacing-1 {
+  letter-spacing: 1px !important;
+}
+.ql-editor .letter-spacing-2 {
+  letter-spacing: 2px !important;
+}
+.ql-editor .letter-spacing-3 {
+  letter-spacing: 3px !important;
+}
+.ql-editor .letter-spacing-4 {
+  letter-spacing: 4px !important;
+}
+.ql-editor .letter-spacing-5 {
+  letter-spacing: 5px !important;
+}
+.ql-editor .letter-spacing-6 {
+  letter-spacing: 6px !important;
+}
+.ql-editor .letter-spacing-7 {
+  letter-spacing: 7px !important;
+}
+.ql-editor .letter-spacing-8 {
+  letter-spacing: 8px !important;
+}
+.ql-editor .letter-spacing-9 {
+  letter-spacing: 9px !important;
+}
+.ql-editor .letter-spacing-10 {
+  letter-spacing: 10px !important;
+}
+.ql-editor .letter-spacing-11 {
+  letter-spacing: 11px !important;
+}
+.ql-editor .letter-spacing-12 {
+  letter-spacing: 12px !important;
+}
+.ql-editor .letter-spacing-13 {
+  letter-spacing: 13px !important;
+}
+.ql-editor .letter-spacing-14 {
+  letter-spacing: 14px !important;
+}
+.ql-editor .letter-spacing-15 {
+  letter-spacing: 15px !important;
+}

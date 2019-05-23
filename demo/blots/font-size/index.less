@@ -1,0 +1,45 @@
+.label-and-options (@fontSize) when (@fontSize > 11) {
+  .label-and-options(@fontSize - 1);
+  .ql-picker-label[data-value="@{fontSize}"]::before,
+  .ql-picker-item[data-value="@{fontSize}"]::before {
+    content: "@{fontSize}px" !important;
+  }
+}
+
+.font-size (@fontSize) when (@fontSize > 11) {
+  .font-size(@fontSize - 1);
+  .font-size-@{fontSize} {
+    font-size: @fontSize * 1px !important;
+  }
+}
+
+.ql-font-size {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+  .ql-picker-label {
+    outline: none;
+    &:hover::after {
+      white-space: nowrap;
+      display: inline-block;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      padding: 2px 4px;
+      content: '字体大小';
+      position: absolute;
+      top: -26px;
+      left: 0;
+      border: solid 1px #aaa;
+      border-radius: 4px;
+      color: #aaa;
+      background: white;
+    }
+  }
+  .label-and-options(50)
+}
+
+.ql-editor {
+  .font-size(50)
+}

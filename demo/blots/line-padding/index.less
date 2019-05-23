@@ -1,0 +1,47 @@
+.line-padding-label-and-options (@fontSize) when (@fontSize > 2) {
+  .line-padding-label-and-options(@fontSize - 1);
+  .ql-picker-label[data-value="@{fontSize}"]::before,
+  .ql-picker-item[data-value="@{fontSize}"]::before {
+    content: "@{fontSize}px" !important;
+  }
+}
+
+.line-padding (@fontSize) when (@fontSize > 2) {
+  .line-padding(@fontSize - 1);
+  .line-padding-@{fontSize} {
+    padding-left: @fontSize * 1px !important;
+    padding-right: @fontSize * 1px !important;
+  }
+}
+
+.ql-line-padding {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+  .ql-picker-label {
+    outline: none;
+    &:hover::after {
+      display: block;
+      white-space: nowrap;
+      width: auto;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      padding: 2px 4px;
+      content: '行两边空白大小';
+      position: absolute;
+      top: -26px;
+      left: 0;
+      border: solid 1px #aaa;
+      border-radius: 4px;
+      color: #aaa;
+      background: white;
+    }
+  }
+  .line-padding-label-and-options(50)
+}
+
+.ql-editor {
+  .line-padding(50)
+}

@@ -1,0 +1,48 @@
+@lineHeightTrue: 0;
+
+.line-height-label-and-options (@lineHeight) when (@lineHeight > 9) {
+  .line-height-label-and-options(@lineHeight - 1);
+  @lineHeightTrue: @lineHeight/10;
+  .ql-picker-label[data-value="@{lineHeightTrue}"]::before,
+  .ql-picker-item[data-value="@{lineHeightTrue}"]::before {
+    content: "@{lineHeightTrue}" !important;
+  }
+}
+
+.line-height (@lineHeight) when (@lineHeight > 9) {
+  .line-height(@lineHeight - 1);
+  .line-height-@{lineHeight} {
+    line-height: @lineHeight/10;
+  }
+}
+
+.ql-line-height {
+  width: 60px;
+  padding-left: 2px;
+  text-align: left;
+  position: relative;
+  .ql-picker-label {
+    outline: none;
+    &:hover::after {
+      white-space: nowrap;
+      display: inline-block;
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      padding: 2px 4px;
+      content: '行间距大小';
+      position: absolute;
+      top: -26px;
+      left: 0;
+      border: solid 1px #aaa;
+      border-radius: 4px;
+      color: #aaa;
+      background: white;
+    }
+  }
+  .line-height-label-and-options(21)
+}
+
+.ql-editor {
+  .line-height(21)
+}
