@@ -24,6 +24,18 @@
   color: #aaa;
   background: white;
 }
+.ql-line-padding .ql-picker-label[data-value="0"]::before,
+.ql-line-padding .ql-picker-item[data-value="0"]::before {
+  content: "0px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="1"]::before,
+.ql-line-padding .ql-picker-item[data-value="1"]::before {
+  content: "1px" !important;
+}
+.ql-line-padding .ql-picker-label[data-value="2"]::before,
+.ql-line-padding .ql-picker-item[data-value="2"]::before {
+  content: "2px" !important;
+}
 .ql-line-padding .ql-picker-label[data-value="3"]::before,
 .ql-line-padding .ql-picker-item[data-value="3"]::before {
   content: "3px" !important;
@@ -215,6 +227,18 @@
 .ql-line-padding .ql-picker-label[data-value="50"]::before,
 .ql-line-padding .ql-picker-item[data-value="50"]::before {
   content: "50px" !important;
+}
+.ql-editor .line-padding-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.ql-editor .line-padding-1 {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+.ql-editor .line-padding-2 {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
 }
 .ql-editor .line-padding-3 {
   padding-left: 3px !important;

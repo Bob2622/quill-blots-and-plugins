@@ -6,10 +6,14 @@ const Embed = Quill.import('blots/block/embed')
 
 class ImageBlot extends Embed {
   static blotName = 'image'
-  static tagName = 'div'
+  // static tagName = 'div'
+  // 此处不能设置为通用标签
+  // 粘贴内容到 quill 编辑器时, 粘贴内容如果有换行
+  // 会触发 tagName 为 div 的 blot 命令
+  static tagName = 'image'
 
   static create (options) {
-    const node = super.create(options.url)
+    let node = document.createElement('div')
     options = Object.assign({
       url: '',
       width: '100%',
@@ -87,15 +91,25 @@ class ImageBlot extends Embed {
   }
 }
 
-const generateHandler = function ({ upload, url, uploadResFormat }) {
+const generateHandler = function (options) {
+  options = Object.assign({
+    upload: false,
+    url: '',
+    uploadResFormat: res => res
+  }, options)
   return function () {
-    if (upload) {
+    if (options.upload) {
       const UploadInstance = new Upload({
         upload: true,
-        url: url
+        url: options.url
       })
       UploadInstance.getFileUrl(res => {
-        res = uploadResFormat(res)
+        res = options.uploadResFormat(res)
+        let range = this.quill.getSelection(true)
+        this.quill.insertText(range.index, '\n', Quill.sources.API)
+        this.quill.insertEmbed(range.index + 1, 'image', {
+          url: res
+        }, Quill.sources.API)
       })
     } else {
       const UploadInstance = new Upload({

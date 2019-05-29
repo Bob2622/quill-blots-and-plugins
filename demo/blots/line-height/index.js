@@ -1,13 +1,13 @@
 import Quill from 'quill'
-const Inline = Quill.import('blots/inline')
+const Block = Quill.import('blots/block')
 
-class lineHeightBlot extends Inline {
+class lineHeightBlot extends Block {
   static blotName = 'line-height'
-  static tagName = 'p'
+  static tagName = 'div'
 
   static create(value) {
     let node = super.create(value)
-    node.classList.add('line-height-' + value)
+    node.classList.add('line-height-' + value*10)
     node.dataset.lineHeight = value + ''
     return node
   }
@@ -17,6 +17,7 @@ class lineHeightBlot extends Inline {
   }
 
   static value(node) {
+    console.log(node)
     return node.dataset.lineHeight + ''
   }
 }

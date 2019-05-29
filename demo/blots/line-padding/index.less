@@ -1,4 +1,4 @@
-.line-padding-label-and-options (@fontSize) when (@fontSize > 2) {
+.line-padding-label-and-options (@fontSize) when (@fontSize >= 0) {
   .line-padding-label-and-options(@fontSize - 1);
   .ql-picker-label[data-value="@{fontSize}"]::before,
   .ql-picker-item[data-value="@{fontSize}"]::before {
@@ -6,7 +6,7 @@
   }
 }
 
-.line-padding (@fontSize) when (@fontSize > 2) {
+.line-padding (@fontSize) when (@fontSize >= 0) {
   .line-padding(@fontSize - 1);
   .line-padding-@{fontSize} {
     padding-left: @fontSize * 1px !important;

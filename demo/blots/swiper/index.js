@@ -13,10 +13,10 @@ const Inline = Quill.import('blots/inline')
 class SwpierBlot extends BlockEmbed {
   static swiper
   static blotName = 'swiper'
-  static tagName = 'div'
+  static tagName = 'swiper'
   
   static create (options) {
-    let node = super.create()
+    let node = document.createElement('div')
     options = Object.assign({
       imgs: [],
       width: '100%',

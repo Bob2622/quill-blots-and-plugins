@@ -1,10 +1,11 @@
 import Quill from 'quill'
+import { deflate } from 'zlib';
 const Block = Quill.import('blots/block')
 const Inline = Quill.import('blots/inline')
 
 class letterSpacingBlot extends Inline {
   static blotName = 'letter-spacing'
-  static tagName = 'p'
+  static tagName = 'span'
 
   constructor (domNode, value) {
     super(domNode, value)

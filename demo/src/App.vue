@@ -2,6 +2,9 @@
   <div id="app">
     <div id="editor" ref="editor"></div>
     <button @click="commit">commit</button>
+    <div class="video-edit-cover">
+      
+    </div>
   </div>
 </template>
 
@@ -80,7 +83,9 @@ export default {
           [ { 'line-padding': [ '12', '14', '18', '22', '28', '32', '36' ] } ],
           [ { 'line-height': [ '1', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '2' ] } ],
           [ { 'letter-spacing': [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ] } ],
-          [ 'image' ]
+          [ 'image' ],
+          [ 'bold', 'italic', 'underline', 'blockquote'],
+          [ { 'list': 'bullet' } ],
         ]
       },
       theme: 'snow'
@@ -107,6 +112,7 @@ export default {
 .ql-editor {
   width: 100%;
   height: 600px;
+  padding: 0 !important;
   .swiper-container {
     width: 100%;
     height: 200px;
