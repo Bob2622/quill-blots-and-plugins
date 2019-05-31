@@ -89,4 +89,4 @@ npm run serve
 
 * input file cancel 需要监听来删除创建出来的 input 按钮
 * 单独编译本模块文件, quill、lodash 等不进入最终文件
-* 行描述 如何叠加在一块
+* padding 应用于 swiper

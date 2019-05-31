@@ -617,16 +617,16 @@
 .ql-editor .line-height-21 {
   line-height: 2.1;
 }
-.ql-line-padding {
+.ql-padding {
   width: 60px;
   padding-left: 2px;
   text-align: left;
   position: relative;
 }
-.ql-line-padding .ql-picker-label {
+.ql-padding .ql-picker-label {
   outline: none;
 }
-.ql-line-padding .ql-picker-label:hover::after {
+.ql-padding .ql-picker-label:hover::after {
   display: block;
   white-space: nowrap;
   width: auto;
@@ -643,411 +643,411 @@
   color: #aaa;
   background: white;
 }
-.ql-line-padding .ql-picker-label[data-value="0"]::before,
-.ql-line-padding .ql-picker-item[data-value="0"]::before {
+.ql-padding .ql-picker-label[data-value="0"]::before,
+.ql-padding .ql-picker-item[data-value="0"]::before {
   content: "0px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="1"]::before,
-.ql-line-padding .ql-picker-item[data-value="1"]::before {
+.ql-padding .ql-picker-label[data-value="1"]::before,
+.ql-padding .ql-picker-item[data-value="1"]::before {
   content: "1px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="2"]::before,
-.ql-line-padding .ql-picker-item[data-value="2"]::before {
+.ql-padding .ql-picker-label[data-value="2"]::before,
+.ql-padding .ql-picker-item[data-value="2"]::before {
   content: "2px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="3"]::before,
-.ql-line-padding .ql-picker-item[data-value="3"]::before {
+.ql-padding .ql-picker-label[data-value="3"]::before,
+.ql-padding .ql-picker-item[data-value="3"]::before {
   content: "3px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="4"]::before,
-.ql-line-padding .ql-picker-item[data-value="4"]::before {
+.ql-padding .ql-picker-label[data-value="4"]::before,
+.ql-padding .ql-picker-item[data-value="4"]::before {
   content: "4px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="5"]::before,
-.ql-line-padding .ql-picker-item[data-value="5"]::before {
+.ql-padding .ql-picker-label[data-value="5"]::before,
+.ql-padding .ql-picker-item[data-value="5"]::before {
   content: "5px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="6"]::before,
-.ql-line-padding .ql-picker-item[data-value="6"]::before {
+.ql-padding .ql-picker-label[data-value="6"]::before,
+.ql-padding .ql-picker-item[data-value="6"]::before {
   content: "6px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="7"]::before,
-.ql-line-padding .ql-picker-item[data-value="7"]::before {
+.ql-padding .ql-picker-label[data-value="7"]::before,
+.ql-padding .ql-picker-item[data-value="7"]::before {
   content: "7px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="8"]::before,
-.ql-line-padding .ql-picker-item[data-value="8"]::before {
+.ql-padding .ql-picker-label[data-value="8"]::before,
+.ql-padding .ql-picker-item[data-value="8"]::before {
   content: "8px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="9"]::before,
-.ql-line-padding .ql-picker-item[data-value="9"]::before {
+.ql-padding .ql-picker-label[data-value="9"]::before,
+.ql-padding .ql-picker-item[data-value="9"]::before {
   content: "9px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="10"]::before,
-.ql-line-padding .ql-picker-item[data-value="10"]::before {
+.ql-padding .ql-picker-label[data-value="10"]::before,
+.ql-padding .ql-picker-item[data-value="10"]::before {
   content: "10px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="11"]::before,
-.ql-line-padding .ql-picker-item[data-value="11"]::before {
+.ql-padding .ql-picker-label[data-value="11"]::before,
+.ql-padding .ql-picker-item[data-value="11"]::before {
   content: "11px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="12"]::before,
-.ql-line-padding .ql-picker-item[data-value="12"]::before {
+.ql-padding .ql-picker-label[data-value="12"]::before,
+.ql-padding .ql-picker-item[data-value="12"]::before {
   content: "12px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="13"]::before,
-.ql-line-padding .ql-picker-item[data-value="13"]::before {
+.ql-padding .ql-picker-label[data-value="13"]::before,
+.ql-padding .ql-picker-item[data-value="13"]::before {
   content: "13px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="14"]::before,
-.ql-line-padding .ql-picker-item[data-value="14"]::before {
+.ql-padding .ql-picker-label[data-value="14"]::before,
+.ql-padding .ql-picker-item[data-value="14"]::before {
   content: "14px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="15"]::before,
-.ql-line-padding .ql-picker-item[data-value="15"]::before {
+.ql-padding .ql-picker-label[data-value="15"]::before,
+.ql-padding .ql-picker-item[data-value="15"]::before {
   content: "15px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="16"]::before,
-.ql-line-padding .ql-picker-item[data-value="16"]::before {
+.ql-padding .ql-picker-label[data-value="16"]::before,
+.ql-padding .ql-picker-item[data-value="16"]::before {
   content: "16px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="17"]::before,
-.ql-line-padding .ql-picker-item[data-value="17"]::before {
+.ql-padding .ql-picker-label[data-value="17"]::before,
+.ql-padding .ql-picker-item[data-value="17"]::before {
   content: "17px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="18"]::before,
-.ql-line-padding .ql-picker-item[data-value="18"]::before {
+.ql-padding .ql-picker-label[data-value="18"]::before,
+.ql-padding .ql-picker-item[data-value="18"]::before {
   content: "18px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="19"]::before,
-.ql-line-padding .ql-picker-item[data-value="19"]::before {
+.ql-padding .ql-picker-label[data-value="19"]::before,
+.ql-padding .ql-picker-item[data-value="19"]::before {
   content: "19px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="20"]::before,
-.ql-line-padding .ql-picker-item[data-value="20"]::before {
+.ql-padding .ql-picker-label[data-value="20"]::before,
+.ql-padding .ql-picker-item[data-value="20"]::before {
   content: "20px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="21"]::before,
-.ql-line-padding .ql-picker-item[data-value="21"]::before {
+.ql-padding .ql-picker-label[data-value="21"]::before,
+.ql-padding .ql-picker-item[data-value="21"]::before {
   content: "21px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="22"]::before,
-.ql-line-padding .ql-picker-item[data-value="22"]::before {
+.ql-padding .ql-picker-label[data-value="22"]::before,
+.ql-padding .ql-picker-item[data-value="22"]::before {
   content: "22px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="23"]::before,
-.ql-line-padding .ql-picker-item[data-value="23"]::before {
+.ql-padding .ql-picker-label[data-value="23"]::before,
+.ql-padding .ql-picker-item[data-value="23"]::before {
   content: "23px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="24"]::before,
-.ql-line-padding .ql-picker-item[data-value="24"]::before {
+.ql-padding .ql-picker-label[data-value="24"]::before,
+.ql-padding .ql-picker-item[data-value="24"]::before {
   content: "24px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="25"]::before,
-.ql-line-padding .ql-picker-item[data-value="25"]::before {
+.ql-padding .ql-picker-label[data-value="25"]::before,
+.ql-padding .ql-picker-item[data-value="25"]::before {
   content: "25px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="26"]::before,
-.ql-line-padding .ql-picker-item[data-value="26"]::before {
+.ql-padding .ql-picker-label[data-value="26"]::before,
+.ql-padding .ql-picker-item[data-value="26"]::before {
   content: "26px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="27"]::before,
-.ql-line-padding .ql-picker-item[data-value="27"]::before {
+.ql-padding .ql-picker-label[data-value="27"]::before,
+.ql-padding .ql-picker-item[data-value="27"]::before {
   content: "27px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="28"]::before,
-.ql-line-padding .ql-picker-item[data-value="28"]::before {
+.ql-padding .ql-picker-label[data-value="28"]::before,
+.ql-padding .ql-picker-item[data-value="28"]::before {
   content: "28px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="29"]::before,
-.ql-line-padding .ql-picker-item[data-value="29"]::before {
+.ql-padding .ql-picker-label[data-value="29"]::before,
+.ql-padding .ql-picker-item[data-value="29"]::before {
   content: "29px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="30"]::before,
-.ql-line-padding .ql-picker-item[data-value="30"]::before {
+.ql-padding .ql-picker-label[data-value="30"]::before,
+.ql-padding .ql-picker-item[data-value="30"]::before {
   content: "30px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="31"]::before,
-.ql-line-padding .ql-picker-item[data-value="31"]::before {
+.ql-padding .ql-picker-label[data-value="31"]::before,
+.ql-padding .ql-picker-item[data-value="31"]::before {
   content: "31px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="32"]::before,
-.ql-line-padding .ql-picker-item[data-value="32"]::before {
+.ql-padding .ql-picker-label[data-value="32"]::before,
+.ql-padding .ql-picker-item[data-value="32"]::before {
   content: "32px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="33"]::before,
-.ql-line-padding .ql-picker-item[data-value="33"]::before {
+.ql-padding .ql-picker-label[data-value="33"]::before,
+.ql-padding .ql-picker-item[data-value="33"]::before {
   content: "33px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="34"]::before,
-.ql-line-padding .ql-picker-item[data-value="34"]::before {
+.ql-padding .ql-picker-label[data-value="34"]::before,
+.ql-padding .ql-picker-item[data-value="34"]::before {
   content: "34px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="35"]::before,
-.ql-line-padding .ql-picker-item[data-value="35"]::before {
+.ql-padding .ql-picker-label[data-value="35"]::before,
+.ql-padding .ql-picker-item[data-value="35"]::before {
   content: "35px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="36"]::before,
-.ql-line-padding .ql-picker-item[data-value="36"]::before {
+.ql-padding .ql-picker-label[data-value="36"]::before,
+.ql-padding .ql-picker-item[data-value="36"]::before {
   content: "36px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="37"]::before,
-.ql-line-padding .ql-picker-item[data-value="37"]::before {
+.ql-padding .ql-picker-label[data-value="37"]::before,
+.ql-padding .ql-picker-item[data-value="37"]::before {
   content: "37px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="38"]::before,
-.ql-line-padding .ql-picker-item[data-value="38"]::before {
+.ql-padding .ql-picker-label[data-value="38"]::before,
+.ql-padding .ql-picker-item[data-value="38"]::before {
   content: "38px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="39"]::before,
-.ql-line-padding .ql-picker-item[data-value="39"]::before {
+.ql-padding .ql-picker-label[data-value="39"]::before,
+.ql-padding .ql-picker-item[data-value="39"]::before {
   content: "39px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="40"]::before,
-.ql-line-padding .ql-picker-item[data-value="40"]::before {
+.ql-padding .ql-picker-label[data-value="40"]::before,
+.ql-padding .ql-picker-item[data-value="40"]::before {
   content: "40px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="41"]::before,
-.ql-line-padding .ql-picker-item[data-value="41"]::before {
+.ql-padding .ql-picker-label[data-value="41"]::before,
+.ql-padding .ql-picker-item[data-value="41"]::before {
   content: "41px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="42"]::before,
-.ql-line-padding .ql-picker-item[data-value="42"]::before {
+.ql-padding .ql-picker-label[data-value="42"]::before,
+.ql-padding .ql-picker-item[data-value="42"]::before {
   content: "42px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="43"]::before,
-.ql-line-padding .ql-picker-item[data-value="43"]::before {
+.ql-padding .ql-picker-label[data-value="43"]::before,
+.ql-padding .ql-picker-item[data-value="43"]::before {
   content: "43px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="44"]::before,
-.ql-line-padding .ql-picker-item[data-value="44"]::before {
+.ql-padding .ql-picker-label[data-value="44"]::before,
+.ql-padding .ql-picker-item[data-value="44"]::before {
   content: "44px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="45"]::before,
-.ql-line-padding .ql-picker-item[data-value="45"]::before {
+.ql-padding .ql-picker-label[data-value="45"]::before,
+.ql-padding .ql-picker-item[data-value="45"]::before {
   content: "45px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="46"]::before,
-.ql-line-padding .ql-picker-item[data-value="46"]::before {
+.ql-padding .ql-picker-label[data-value="46"]::before,
+.ql-padding .ql-picker-item[data-value="46"]::before {
   content: "46px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="47"]::before,
-.ql-line-padding .ql-picker-item[data-value="47"]::before {
+.ql-padding .ql-picker-label[data-value="47"]::before,
+.ql-padding .ql-picker-item[data-value="47"]::before {
   content: "47px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="48"]::before,
-.ql-line-padding .ql-picker-item[data-value="48"]::before {
+.ql-padding .ql-picker-label[data-value="48"]::before,
+.ql-padding .ql-picker-item[data-value="48"]::before {
   content: "48px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="49"]::before,
-.ql-line-padding .ql-picker-item[data-value="49"]::before {
+.ql-padding .ql-picker-label[data-value="49"]::before,
+.ql-padding .ql-picker-item[data-value="49"]::before {
   content: "49px" !important;
 }
-.ql-line-padding .ql-picker-label[data-value="50"]::before,
-.ql-line-padding .ql-picker-item[data-value="50"]::before {
+.ql-padding .ql-picker-label[data-value="50"]::before,
+.ql-padding .ql-picker-item[data-value="50"]::before {
   content: "50px" !important;
 }
-.ql-editor .line-padding-0 {
+.ql-editor .ql-padding-0 {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-.ql-editor .line-padding-1 {
+.ql-editor .ql-padding-1 {
   padding-left: 1px !important;
   padding-right: 1px !important;
 }
-.ql-editor .line-padding-2 {
+.ql-editor .ql-padding-2 {
   padding-left: 2px !important;
   padding-right: 2px !important;
 }
-.ql-editor .line-padding-3 {
+.ql-editor .ql-padding-3 {
   padding-left: 3px !important;
   padding-right: 3px !important;
 }
-.ql-editor .line-padding-4 {
+.ql-editor .ql-padding-4 {
   padding-left: 4px !important;
   padding-right: 4px !important;
 }
-.ql-editor .line-padding-5 {
+.ql-editor .ql-padding-5 {
   padding-left: 5px !important;
   padding-right: 5px !important;
 }
-.ql-editor .line-padding-6 {
+.ql-editor .ql-padding-6 {
   padding-left: 6px !important;
   padding-right: 6px !important;
 }
-.ql-editor .line-padding-7 {
+.ql-editor .ql-padding-7 {
   padding-left: 7px !important;
   padding-right: 7px !important;
 }
-.ql-editor .line-padding-8 {
+.ql-editor .ql-padding-8 {
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
-.ql-editor .line-padding-9 {
+.ql-editor .ql-padding-9 {
   padding-left: 9px !important;
   padding-right: 9px !important;
 }
-.ql-editor .line-padding-10 {
+.ql-editor .ql-padding-10 {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
-.ql-editor .line-padding-11 {
+.ql-editor .ql-padding-11 {
   padding-left: 11px !important;
   padding-right: 11px !important;
 }
-.ql-editor .line-padding-12 {
+.ql-editor .ql-padding-12 {
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
-.ql-editor .line-padding-13 {
+.ql-editor .ql-padding-13 {
   padding-left: 13px !important;
   padding-right: 13px !important;
 }
-.ql-editor .line-padding-14 {
+.ql-editor .ql-padding-14 {
   padding-left: 14px !important;
   padding-right: 14px !important;
 }
-.ql-editor .line-padding-15 {
+.ql-editor .ql-padding-15 {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
-.ql-editor .line-padding-16 {
+.ql-editor .ql-padding-16 {
   padding-left: 16px !important;
   padding-right: 16px !important;
 }
-.ql-editor .line-padding-17 {
+.ql-editor .ql-padding-17 {
   padding-left: 17px !important;
   padding-right: 17px !important;
 }
-.ql-editor .line-padding-18 {
+.ql-editor .ql-padding-18 {
   padding-left: 18px !important;
   padding-right: 18px !important;
 }
-.ql-editor .line-padding-19 {
+.ql-editor .ql-padding-19 {
   padding-left: 19px !important;
   padding-right: 19px !important;
 }
-.ql-editor .line-padding-20 {
+.ql-editor .ql-padding-20 {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
-.ql-editor .line-padding-21 {
+.ql-editor .ql-padding-21 {
   padding-left: 21px !important;
   padding-right: 21px !important;
 }
-.ql-editor .line-padding-22 {
+.ql-editor .ql-padding-22 {
   padding-left: 22px !important;
   padding-right: 22px !important;
 }
-.ql-editor .line-padding-23 {
+.ql-editor .ql-padding-23 {
   padding-left: 23px !important;
   padding-right: 23px !important;
 }
-.ql-editor .line-padding-24 {
+.ql-editor .ql-padding-24 {
   padding-left: 24px !important;
   padding-right: 24px !important;
 }
-.ql-editor .line-padding-25 {
+.ql-editor .ql-padding-25 {
   padding-left: 25px !important;
   padding-right: 25px !important;
 }
-.ql-editor .line-padding-26 {
+.ql-editor .ql-padding-26 {
   padding-left: 26px !important;
   padding-right: 26px !important;
 }
-.ql-editor .line-padding-27 {
+.ql-editor .ql-padding-27 {
   padding-left: 27px !important;
   padding-right: 27px !important;
 }
-.ql-editor .line-padding-28 {
+.ql-editor .ql-padding-28 {
   padding-left: 28px !important;
   padding-right: 28px !important;
 }
-.ql-editor .line-padding-29 {
+.ql-editor .ql-padding-29 {
   padding-left: 29px !important;
   padding-right: 29px !important;
 }
-.ql-editor .line-padding-30 {
+.ql-editor .ql-padding-30 {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
-.ql-editor .line-padding-31 {
+.ql-editor .ql-padding-31 {
   padding-left: 31px !important;
   padding-right: 31px !important;
 }
-.ql-editor .line-padding-32 {
+.ql-editor .ql-padding-32 {
   padding-left: 32px !important;
   padding-right: 32px !important;
 }
-.ql-editor .line-padding-33 {
+.ql-editor .ql-padding-33 {
   padding-left: 33px !important;
   padding-right: 33px !important;
 }
-.ql-editor .line-padding-34 {
+.ql-editor .ql-padding-34 {
   padding-left: 34px !important;
   padding-right: 34px !important;
 }
-.ql-editor .line-padding-35 {
+.ql-editor .ql-padding-35 {
   padding-left: 35px !important;
   padding-right: 35px !important;
 }
-.ql-editor .line-padding-36 {
+.ql-editor .ql-padding-36 {
   padding-left: 36px !important;
   padding-right: 36px !important;
 }
-.ql-editor .line-padding-37 {
+.ql-editor .ql-padding-37 {
   padding-left: 37px !important;
   padding-right: 37px !important;
 }
-.ql-editor .line-padding-38 {
+.ql-editor .ql-padding-38 {
   padding-left: 38px !important;
   padding-right: 38px !important;
 }
-.ql-editor .line-padding-39 {
+.ql-editor .ql-padding-39 {
   padding-left: 39px !important;
   padding-right: 39px !important;
 }
-.ql-editor .line-padding-40 {
+.ql-editor .ql-padding-40 {
   padding-left: 40px !important;
   padding-right: 40px !important;
 }
-.ql-editor .line-padding-41 {
+.ql-editor .ql-padding-41 {
   padding-left: 41px !important;
   padding-right: 41px !important;
 }
-.ql-editor .line-padding-42 {
+.ql-editor .ql-padding-42 {
   padding-left: 42px !important;
   padding-right: 42px !important;
 }
-.ql-editor .line-padding-43 {
+.ql-editor .ql-padding-43 {
   padding-left: 43px !important;
   padding-right: 43px !important;
 }
-.ql-editor .line-padding-44 {
+.ql-editor .ql-padding-44 {
   padding-left: 44px !important;
   padding-right: 44px !important;
 }
-.ql-editor .line-padding-45 {
+.ql-editor .ql-padding-45 {
   padding-left: 45px !important;
   padding-right: 45px !important;
 }
-.ql-editor .line-padding-46 {
+.ql-editor .ql-padding-46 {
   padding-left: 46px !important;
   padding-right: 46px !important;
 }
-.ql-editor .line-padding-47 {
+.ql-editor .ql-padding-47 {
   padding-left: 47px !important;
   padding-right: 47px !important;
 }
-.ql-editor .line-padding-48 {
+.ql-editor .ql-padding-48 {
   padding-left: 48px !important;
   padding-right: 48px !important;
 }
-.ql-editor .line-padding-49 {
+.ql-editor .ql-padding-49 {
   padding-left: 49px !important;
   padding-right: 49px !important;
 }
-.ql-editor .line-padding-50 {
+.ql-editor .ql-padding-50 {
   padding-left: 50px !important;
   padding-right: 50px !important;
 }
@@ -1147,4 +1147,7 @@
 }
 .swiper-container {
   display: inline-block !important;
+}
+.ql-toolbar .ql-picker.ql-expanded .ql-picker-options {
+  z-index: 2;
 }

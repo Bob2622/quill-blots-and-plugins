@@ -3,13 +3,14 @@ import FontSize from './font-size'
 import Image from './image'
 import LetterSpacing from './letter-spacing'
 import LineHeight from './line-height'
-import LinePadding from './line-padding'
+import PaddingClass from './padding'
 import Swiper from './swiper'
+import Parchment from 'parchment'
 import { handler as FontSizeHandler } from './font-size'
 import { generateHandler as ImageGenerateHandler } from './image'
 import { handler as LetterSpacingHandler } from './letter-spacing'
 import { handler as LineHeightHandler } from './line-height'
-import { handler as LinePaddingHandler } from './line-padding'
+import { handler as PaddingHandler } from './padding'
 import { generateHandler as SwiperGeneratorHandler } from './swiper'
 
 export default {
@@ -18,7 +19,7 @@ export default {
     Quill.register(Image)
     Quill.register(LetterSpacing)
     Quill.register(LineHeight)
-    Quill.register(LinePadding)
+    Quill.register({ 'formats/padding': PaddingClass }, false)
     Quill.register(Swiper)
   },
 
@@ -35,7 +36,7 @@ export default {
     }, options)
     let toolbar = quill.getModule('toolbar')
     toolbar.addHandler('font-size', FontSizeHandler)
-    toolbar.addHandler('line-padding', LinePaddingHandler)
+    toolbar.addHandler('padding', PaddingHandler)
     toolbar.addHandler('letter-spacing', LetterSpacingHandler)
     toolbar.addHandler('line-height', LineHeightHandler)
     toolbar.addHandler('image', ImageGenerateHandler(options.image))

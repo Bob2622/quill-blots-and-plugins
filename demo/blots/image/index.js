@@ -39,9 +39,9 @@ class ImageBlot extends Embed {
       padding-left: ${options.padding};
       padding-right: ${options.padding};
     `)
-    imgDom.addEventListener('dblclick', () => {
-      this.showImageEditDialog.call(this, node)
-    })
+    // imgDom.addEventListener('dblclick', () => {
+    //   this.showImageEditDialog.call(this, node)
+    // })
     node.appendChild(imgDom)
     return node
   }

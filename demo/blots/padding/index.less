@@ -1,20 +1,20 @@
-.line-padding-label-and-options (@fontSize) when (@fontSize >= 0) {
-  .line-padding-label-and-options(@fontSize - 1);
+.padding-label-and-options (@fontSize) when (@fontSize >= 0) {
+  .padding-label-and-options(@fontSize - 1);
   .ql-picker-label[data-value="@{fontSize}"]::before,
   .ql-picker-item[data-value="@{fontSize}"]::before {
     content: "@{fontSize}px" !important;
   }
 }
 
-.line-padding (@fontSize) when (@fontSize >= 0) {
-  .line-padding(@fontSize - 1);
-  .line-padding-@{fontSize} {
+.padding (@fontSize) when (@fontSize >= 0) {
+  .padding(@fontSize - 1);
+  .ql-padding-@{fontSize} {
     padding-left: @fontSize * 1px !important;
     padding-right: @fontSize * 1px !important;
   }
 }
 
-.ql-line-padding {
+.ql-padding {
   width: 60px;
   padding-left: 2px;
   text-align: left;
@@ -39,9 +39,9 @@
       background: white;
     }
   }
-  .line-padding-label-and-options(50)
+  .padding-label-and-options(50)
 }
 
 .ql-editor {
-  .line-padding(50)
+  .padding(250)
 }

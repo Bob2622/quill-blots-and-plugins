@@ -40,29 +40,47 @@ export default {
     return {
       quill: null,
       file: null,
+      // delta: {
+      //   ops: [
+      //     {
+      //       "insert": {
+      //         "swiper": {
+      //           "imgs": [
+      //             {
+      //               "fileName": "Bitmap.png",
+      //               "url": "https://t4.a.market.xiaomi.com/download/AdCenter/0a5fc4ee24cfc44813137526c8e1f9e3d394215aa/445790752.png"
+      //             },
+      //             {
+      //               "fileName": "Bitmap1.png",
+      //               "url": "https://t5.a.market.xiaomi.com/download/AdCenter/0a5fc4ee26cfc64815137326cee1f0e3d894215aa/1761269139.png"
+      //             },
+      //             {
+      //               "fileName": "Bitmap4.png",
+      //               "url": "https://t2.a.market.xiaomi.com/download/AdCenter/0dbeb6411db834e2a1327973a0ffa83ba758a2322/1866930801.png"
+      //             }
+      //           ],
+      //           width: 50,
+      //           align: 'center'
+      //         }
+      //       }
+      //     }
+      //   ]
+      // },
       delta: {
-        ops: [
+        "ops": [
           {
-            "insert": {
-              "swiper": {
-                "imgs": [
-                  {
-                    "fileName": "Bitmap.png",
-                    "url": "https://t4.a.market.xiaomi.com/download/AdCenter/0a5fc4ee24cfc44813137526c8e1f9e3d394215aa/445790752.png"
-                  },
-                  {
-                    "fileName": "Bitmap1.png",
-                    "url": "https://t5.a.market.xiaomi.com/download/AdCenter/0a5fc4ee26cfc64815137326cee1f0e3d894215aa/1761269139.png"
-                  },
-                  {
-                    "fileName": "Bitmap4.png",
-                    "url": "https://t2.a.market.xiaomi.com/download/AdCenter/0dbeb6411db834e2a1327973a0ffa83ba758a2322/1866930801.png"
-                  }
-                ],
-                width: 50,
-                align: 'center'
+            "insert": "231321321"
+          },
+          {
+            "attributes": {
+              "block": {
+                "padding-right": "14px"
               }
-            }
+            },
+            "insert": "\n"
+          },
+          {
+            "insert": "\n"
           }
         ]
       }
@@ -78,9 +96,15 @@ export default {
     this.quill = new Quill('#editor', {
       modules: { 
         toolbar: [ 
+          [ 'indent1' ],
           [ 'swiper' ],
+          [{ 'script': 'sub'}, { 'script': 'super' }],
+          [{ 'indent': '-1'}, { 'indent': '+1' }],
           [ { 'font-size': [ '12', '14', '18', '22', '28', '32', '36' ] } ],
-          [ { 'line-padding': [ '12', '14', '18', '22', '28', '32', '36' ] } ],
+          [ { 'padding': [ 
+            '0', '2', '4', '6', '8', '10',
+            '12', '14', '18', '22', '28', '32', '36' 
+          ] } ],
           [ { 'line-height': [ '1', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '1.7', '1.8', '1.9', '2' ] } ],
           [ { 'letter-spacing': [ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10' ] } ],
           [ 'image' ],
