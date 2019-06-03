@@ -8,3 +8,10 @@
 .ql-toolbar .ql-picker.ql-expanded .ql-picker-options {
   z-index: 2;
 }
+.ql-toolbar .ql-picker.ql-expanded .ql-picker-options {
+  max-height: 200px;
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

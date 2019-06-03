@@ -1,9 +1,8 @@
 {
   "name": "quill-blots-and-plugins",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "description": "quill's blots and plugins",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bob2622/quill-swiper.git"
@@ -31,5 +30,9 @@
     "webpack": "^3.12.0",
     "webpack-cli": "^3.3.2"
   },
-  "main": "demo/blots/index.js"
+  "main": "demo/blots/index.js",
+  "dependencies": {
+    "delta": "^3.0.5",
+    "quill-delta": "^4.2.1"
+  }
 }

@@ -10,10 +10,11 @@
 
 <script>
 import SwiperCss from 'swiper/dist/css/swiper.min.css'
+import Delta from 'quill-delta'
 import Quill from 'quill'
 import Snow from 'quill/dist/quill.snow.css'
 import Blots from '../blots'
-Blots.registerWith(Quill)
+// Blots.registerWith(Quill)
 // import SwpierBlot from '../../blots/swiper/index'
 // import { SwiperHandler } from '../../blots/swiper/index'
 // import FontSizeBlot from '../../blots/font-size/index'
@@ -88,15 +89,20 @@ export default {
   },
   methods: {
     commit () {
-      console.log(this.quill.getContents())
-      console.log(JSON.stringify(this.quill.getContents()))
+      const contents = this.quill.getContents()
+      console.log('contents', JSON.stringify(contents, null, '  '))
+      const delta = new Delta(contents.ops)
+      console.log('delta', JSON.stringify(delta, null, '  '))
+      delta.eachLine(line => {
+        console.log(arguments)
+        console.log('line:', JSON.stringify(line, null, '  '))
+      })
     }
   },
   mounted () {
     this.quill = new Quill('#editor', {
       modules: { 
         toolbar: [ 
-          [ 'indent1' ],
           [ 'swiper' ],
           [{ 'script': 'sub'}, { 'script': 'super' }],
           [{ 'indent': '-1'}, { 'indent': '+1' }],
@@ -135,7 +141,7 @@ export default {
 }
 .ql-editor {
   width: 100%;
-  height: 600px;
+  height: 500px;
   padding: 0 !important;
   .swiper-container {
     width: 100%;

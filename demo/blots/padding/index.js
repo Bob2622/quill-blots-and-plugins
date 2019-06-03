@@ -11,6 +11,7 @@ class PaddingAttributor extends Parchment.Attributor.Class {
   }
 
   value(node) {
+    console.log('value', parseInt(super.value(node)))
     return parseInt(super.value(node)) || undefined  // Don't return NaN
   }
 }
