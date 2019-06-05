@@ -106,10 +106,14 @@ const generateHandler = function (options) {
       UploadInstance.getFileUrl(res => {
         res = options.uploadResFormat(res)
         let range = this.quill.getSelection(true)
-        this.quill.insertText(range.index, '\n', Quill.sources.API)
-        this.quill.insertEmbed(range.index + 1, 'image', {
+        this.quill.insertEmbed(range.index, 'image', {
           url: res
         }, Quill.sources.API)
+        this.quill.insertText(range.index + 1, '\n')
+        this.quill.setSelection({
+          index: range.index + 2,
+          length: 0
+        })
       })
     } else {
       const UploadInstance = new Upload({
@@ -117,10 +121,14 @@ const generateHandler = function (options) {
       })
       UploadInstance.getFileBase64Data(res => {
         let range = this.quill.getSelection(true)
-        this.quill.insertText(range.index, '\n', Quill.sources.API)
-        this.quill.insertEmbed(range.index + 1, 'image', {
+        this.quill.insertEmbed(range.index, 'image', {
           url: res[0]
         }, Quill.sources.API)
+        this.quill.insertText(range.index + 1, '\n')
+        this.quill.setSelection({
+          index: range.index + 2,
+          length: 0
+        })
       })
     }
   }
