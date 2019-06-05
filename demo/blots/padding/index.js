@@ -11,7 +11,6 @@ class PaddingAttributor extends Parchment.Attributor.Class {
   }
 
   value(node) {
-    console.log('value', parseInt(super.value(node)))
     return parseInt(super.value(node)) || undefined  // Don't return NaN
   }
 }
@@ -20,9 +19,19 @@ const PaddingClass = new PaddingAttributor('padding', 'ql-padding', {
   scope: Parchment.Scope.BLOCK
 })
 
-const handler = function (value) {
-  let range = this.quill.getSelection()
-  this.quill.formatLine(range.index, 1, 'padding', value)
+let currentRange = {
+  index: 0,
+  length: 0
 }
 
-export { PaddingClass as default, handler }
+const handler = function (value) {
+  this.quill.formatLine(currentRange.index, currentRange.length, 'padding', value)
+}
+
+const handleSelectedChange = function (quill, options) {
+  quill.on('selection-change', (range, oldRange, source) => {
+    currentRange = range
+  })
+}
+
+export { PaddingClass as default, handler, handleSelectedChange }

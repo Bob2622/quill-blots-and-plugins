@@ -11,6 +11,7 @@ import { generateHandler as ImageGenerateHandler } from './image'
 import { handler as LetterSpacingHandler } from './letter-spacing'
 import { handler as LineHeightHandler } from './line-height'
 import { handler as PaddingHandler } from './padding'
+import { handleSelectedChange as handlerSelected } from './padding'
 import { generateHandler as SwiperGeneratorHandler } from './swiper'
 
 export default {
@@ -19,6 +20,7 @@ export default {
     Quill.register(Image)
     Quill.register(LetterSpacing)
     Quill.register(LineHeight)
+    Quill.register('modules/handleChangeForPadding', handlerSelected)
     Quill.register({ 'formats/padding': PaddingClass }, false)
     Quill.register(Swiper)
   },

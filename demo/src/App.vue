@@ -2,9 +2,8 @@
   <div id="app">
     <div id="editor" ref="editor"></div>
     <button @click="commit">commit</button>
-    <div class="video-edit-cover">
-      
-    </div>
+    <div class="video-edit-cover"></div>
+    <div>狮山广发书法家客户吗，发的哈咖啡大师了，按付款的撒谎发了扩，大和开发的撒谎； 奋斗啦；了；撒娇歌；垃圾广告骄傲了攻击力安家了‘</div>
   </div>
 </template>
 
@@ -14,7 +13,7 @@ import Delta from 'quill-delta'
 import Quill from 'quill'
 import Snow from 'quill/dist/quill.snow.css'
 import Blots from '../blots'
-// Blots.registerWith(Quill)
+Blots.registerWith(Quill)
 // import SwpierBlot from '../../blots/swiper/index'
 // import { SwiperHandler } from '../../blots/swiper/index'
 // import FontSizeBlot from '../../blots/font-size/index'
@@ -116,13 +115,17 @@ export default {
           [ 'image' ],
           [ 'bold', 'italic', 'underline', 'blockquote'],
           [ { 'list': 'bullet' } ],
-        ]
+        ],
+        handleChangeForPadding: true
       },
       theme: 'snow'
     })
 
     // this.quill.setContents(this.delta)
 
+    // this.quill.on('selection-change', (a, b , c) => {
+    //   console.log(a, b, c)
+    // })
     Blots.addHandlderTo(this.quill)
   }
 }
