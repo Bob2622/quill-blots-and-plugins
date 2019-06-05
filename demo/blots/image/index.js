@@ -19,6 +19,7 @@ class ImageBlot extends Embed {
       width: '100%',
       padding: 0
     }, options || {})
+
     node.setAttribute('data-options', JSON.stringify(options))
     return this.renderImage(node)
   }
@@ -33,15 +34,18 @@ class ImageBlot extends Embed {
     if (imgDom === null) {
       imgDom = document.createElement('img')
     }
+    if (!isNaN(options.padding * 1)) {
+      options.padding += 'px'
+    }
     imgDom.setAttribute('src', options.url)
     imgDom.setAttribute('width', options.width)
     node.setAttribute('style', `
       padding-left: ${options.padding};
       padding-right: ${options.padding};
     `)
-    // imgDom.addEventListener('dblclick', () => {
-    //   this.showImageEditDialog.call(this, node)
-    // })
+    imgDom.addEventListener('dblclick', () => {
+      this.showImageEditDialog.call(this, node)
+    })
     node.appendChild(imgDom)
     return node
   }
@@ -58,7 +62,6 @@ class ImageBlot extends Embed {
             <h3>编辑图片样式</h3>
             <div><label for="">宽度</label><input type="text" class="image-width"></div>
             <div><label for="">边距</label><input type="text" class="image-padding"></div>
-            <div class="tips">Tips: 设置数值必须为带单位 20px 或者 20%</div>
             <button class="image-btn-style-edit">确定</button>
           </div>
         </div>
