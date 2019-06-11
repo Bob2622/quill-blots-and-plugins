@@ -5,13 +5,11 @@ import LetterSpacing from './letter-spacing'
 import LineHeight from './line-height'
 import PaddingClass from './padding'
 import Swiper from './swiper'
-import Parchment from 'parchment'
 import { handler as FontSizeHandler } from './font-size'
 import { generateHandler as ImageGenerateHandler } from './image'
 import { handler as LetterSpacingHandler } from './letter-spacing'
 import { handler as LineHeightHandler } from './line-height'
 import { handler as PaddingHandler } from './padding'
-import { handleSelectedChange as handlerSelected } from './padding'
 import { generateHandler as SwiperGeneratorHandler } from './swiper'
 
 export default {
@@ -20,7 +18,6 @@ export default {
     Quill.register(Image)
     Quill.register(LetterSpacing)
     Quill.register(LineHeight)
-    Quill.register('modules/handleChangeForPadding', handlerSelected)
     Quill.register({ 'formats/padding': PaddingClass }, false)
     Quill.register(Swiper)
   },
@@ -43,5 +40,11 @@ export default {
     toolbar.addHandler('line-height', LineHeightHandler)
     toolbar.addHandler('image', ImageGenerateHandler(options.image))
     toolbar.addHandler('swiper', SwiperGeneratorHandler(options.swiper))
+
+    quill.on('editor-change', (eventName, ...args) => {
+      if (eventName === 'selection-change') {
+        quill._currentRange = args[0]
+      }
+    })
   }
 }

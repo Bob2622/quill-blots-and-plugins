@@ -23,8 +23,9 @@ class letterSpacingBlot extends Inline {
 }
 
 const handler = function (value) {
-  // 格式化当前内容
-  this.quill.format('letter-spacing', value, Quill.sources.USER)
+  const currentRange = this.quill._currentRange
+  console.log(currentRange)
+  this.quill.formatText(currentRange.index, currentRange.length, 'letter-spacing', value)
 }
 
 export {

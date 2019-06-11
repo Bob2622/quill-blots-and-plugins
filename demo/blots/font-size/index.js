@@ -24,8 +24,14 @@ class FontSizeBlot extends Inline {
   }
 }
 
+let currentRange = {
+  index: 0,
+  length: 0
+}
+
 const handler = function (value) {
-  this.quill.format('font-size', value, Quill.sources.USER)
+  const currentRange = this.quill._currentRange
+  this.quill.formatText(currentRange.index, currentRange.length, 'font-size', value)
 }
 
 export {

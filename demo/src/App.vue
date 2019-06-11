@@ -116,7 +116,6 @@ export default {
           [ 'bold', 'italic', 'underline', 'blockquote'],
           [ { 'list': 'bullet' } ],
         ],
-        handleChangeForPadding: true
       },
       theme: 'snow'
     })

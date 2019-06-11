@@ -25,13 +25,8 @@ let currentRange = {
 }
 
 const handler = function (value) {
+  const currentRange = this.quill._currentRange
   this.quill.formatLine(currentRange.index, currentRange.length, 'padding', value)
 }
 
-const handleSelectedChange = function (quill, options) {
-  quill.on('selection-change', (range, oldRange, source) => {
-    currentRange = range
-  })
-}
-
-export { PaddingClass as default, handler, handleSelectedChange }
+export { PaddingClass as default, handler }
